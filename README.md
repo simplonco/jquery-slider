@@ -9,19 +9,19 @@ You must realize yourself a carousel. Simple at first, you can always upgrade la
 - It will scroll only, that is to say that the images will scroll by themselves without anyone having to intervene;
 - It can be very flexible to the extent that it will be possible to put as many images as you want.
 
-## SetTimeout() or repeat function regularly
+## `setTimeout()` or repeat function regularly
 
-A native method of JavaScript will be useful to automatically scroll the images. This is `setTimeout ()`, which takes two arguments: the name of the function to perform, and the time interval (in milliseconds) to wait before doing so. The trick is to revive the function within itself to make an infinite loop:
+A native method of JavaScript will be useful to automatically scroll the images. This is `setTimeout()`, which takes two arguments: the name of the function to perform, and the time interval (in milliseconds) to wait before doing so. The trick is to revive the function within itself to make an infinite loop:
 
-```Javascript
+```javascript
 myloop function () {
-    setTimeout (function () {
-        alert ( 'Hello!'); // Display "Hello!" every second
-        myloop (); // Recovery function
+    setTimeout(function () {
+        alert ('Hello'); // Display "Hello!" every second
+        myloop(); // Recovery function
     }, 1000);
 }
 
-myloop (); // We not forget to start the first time function
+myloop(); // We not forget to start the first time function
 ```
 
 The images used here are from lorempixel.com and not all copyright free.
