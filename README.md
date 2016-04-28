@@ -1,41 +1,41 @@
-#Slider
+#slider
 
-Certains vont sans aucun doute se demander : "qu'est-ce qu'un carrousel ?".  Un carrousel, c'est tout simplement un défilement d'images, le plus souvent présent sur l'index d'un site web.
+Some will no doubt ask: "what is a carousel?". A carousel, it's just a picture scroll, mostly present in the index a website.
 
-##Objectifs
+## Goals
 
-Vous devez réaliser vous-même un carrousel. Simple dans un premier temps, vous pourrez toujours l'améliorer par la suite si vous êtes motivé ! Ce carrousel, qu'on appellera également slider assez couramment, devra simplement comporter quelques fonctions basiques :
-- il devra posséder deux boutons, un pour afficher l'image précédente, l'autre pour afficher la suivante ;
-- il saura défiler seul, c'est-à-dire que les images défileront d'elles-mêmes sans que l'on ait à intervenir ;
-- il pourra être très flexible dans la mesure où il sera possible de mettre autant d'images que l'on souhaite.
+You must realize yourself a carousel. Simple at first, you can always upgrade later if you're motivated! The carousel, which also called slider quite fluently, will just have some basic functions:
+- It should have two buttons, one for the previous picture, the other to display the next;
+- It will scroll only, that is to say that the images will scroll by themselves without anyone having to intervene;
+- It can be very flexible to the extent that it will be possible to put as many images as you want.
 
-##setTimeout(), ou répéter une fonction régulièrement
+## SetTimeout () or repeat function regularly
 
-Une méthode native de JavaScript va vous être utile pour faire défiler automatiquement les images. Il s'agit de `setTimeout()`, qui prend deux arguments : le nom de la fonction à exécuter, et l'intervalle de temps (en millisecondes) à attendre avant de le faire. L'astuce, c'est de relancer la fonction à l'intérieur d'elle-même pour réaliser une boucle infinie :
+A native method of JavaScript will be useful to automatically scroll the images. This is `setTimeout ()`, which takes two arguments: the name of the function to perform, and the time interval (in milliseconds) to wait before doing so. The trick is to revive the function within itself to make an infinite loop:
 
-```javascript
-function maBoucle () {
-    setTimeout(function () {
-        alert('Bonjour !'); // affichera "Bonjour !" toutes les secondes
-        maBoucle(); // relance la fonction
+```Javascript
+myloop function () {
+    setTimeout (function () {
+        alert ( 'Hello!'); // Display "Hello!" every second
+        myloop (); // Recovery function
     }, 1000);
 }
 
-maBoucle(); // on oublie pas de lancer la fonction une première fois
+myloop (); // We not forget to start the first time function
 ```
 
-Les images utilisées ici proviennent de lorempixel.com et ne sont pas toutes libres de droit.
+The images used here are from lorempixel.com and not all copyright free.
 
-Vous avez maintenant toutes les clés pour réaliser ce carrousel !
+You now have all the keys to achieving this carousel!
 
-N'oubliez pas de consulter la documentation de jQuery si vous en avez besoin, et de faire usage d'un debugger pour localiser un soucis dans votre code.
+Remember to consult jQuery documentation if you need it, and make use of a debugger to locate a concern in your code.
 
-##Améliorations
+## Improvements
 
-Nous venons de vous présenter un carrousel très basique. La plupart de ceux que vous rencontrerez sur la toile sont beaucoup plus sophistiqués, mais rappelez-vous qu'ils fonctionnent presque tous de la même manière ! Que diriez-vous donc d'améliorer le votre ? Voici quelques pistes :
-- le défilement d'images n'est pas très esthétique : à la place du système de display, essayez de mettre en place des effets d'animation sympatiques !
-pour le moment, les contrôles sont très basiques : il n'est pas possible d'aller à une image précise en cliquant une seule fois. Que diriez-vous de réaliser une liste de boutons représentant chacun une diapositive ?
-- de même, il est possible de faire des miniatures des images et de les afficher en dessous du carrousel pour faire une bien meilleure navigation !
+We just present you a very basic carousel. Most people you meet on the canvas are much more sophisticated, but remember that they work almost all the same way! What would you say to improve your? Here are some ideas:
+- The image scrolling is not very aesthetic: in place of the display system, try to establish sympatiques animation effects!
+for now, the controls are very basic: it is not possible to go to a specific image by clicking once. How about to make a list of buttons representing each slide?
+- Similarly, it is possible to make thumbnails of the images and display them below the carousel for a much better browsing!
 - ...
 
-Les possibilités sont infinies, on peut toujours trouver de nouvelles idées, qu'elles soient bonnes ou non.
+The possibilities are endless, you can always find new ideas, whether good or not.
