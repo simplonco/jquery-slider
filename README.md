@@ -14,14 +14,14 @@ You must realize yourself a carousel. Simple at first, you can always upgrade la
 A native method of **JavaScript** will be useful to automatically scroll the images. This is `setTimeout()`, which takes two arguments: the name of the `function` to perform, and the time interval (in milliseconds) to wait before doing so. The trick is to revive the function within itself to make an infinite loop:
 
 ```javascript
-myloop function () {
+var myLoop = function () {
     setTimeout(function () {
-        alert ('Hello'); // Display "Hello!" every second
-        myloop(); // Recovery function
+        alert('Hello'); // Display "Hello!" every second
+        myLoop(); // Recovery function
     }, 1000);
-}
+};
 
-myloop(); // We not forget to start the first time function
+myLoop(); // We not forget to start the first time function
 ```
 
 The images used here are from [lorempixel.com](http://lorempixel.com/) and are not all copyright free.
