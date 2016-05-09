@@ -24,7 +24,7 @@ myloop function () {
 myloop(); // We not forget to start the first time function
 ```
 
-The images used here are from <lorempixel.com> and are not all copyright free.
+The images used here are from [lorempixel.com](http://lorempixel.com/) and are not all copyright free.
 
 You now have all the keys to achieving this carousel!
 
