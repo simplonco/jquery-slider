@@ -5,6 +5,7 @@ Certains vont sans aucun doute se demander : _"qu'est-ce qu'un carrousel ?"_.  U
 ## Objectifs
 
 Vous devez réaliser vous-même un carrousel. Simple dans un premier temps, vous pourrez toujours l'améliorer par la suite si vous êtes motivé ! Ce carrousel, qu'on appellera également _slider_ assez couramment, devra simplement comporter quelques fonctions basiques :
+
 * il devra posséder deux boutons, un pour afficher l'image précédente, l'autre pour afficher la suivante ;
 * il saura défiler seul, c'est-à-dire que les images défileront d'elles-mêmes sans que l'on ait à intervenir ;
 * il pourra être très flexible dans la mesure où il sera possible de mettre autant d'images que l'on souhaite.
@@ -33,6 +34,7 @@ N'oubliez pas de consulter la documentation de **jQuery** si vous en avez besoin
 ## Améliorations
 
 Nous venons de vous présenter un carrousel très basique. La plupart de ceux que vous rencontrerez sur la toile sont beaucoup plus sophistiqués, mais rappelez-vous qu'ils fonctionnent presque tous de la même manière ! Que diriez-vous donc d'améliorer le votre ? Voici quelques pistes :
+
 * le défilement d'images n'est pas très esthétique : à la place du système de display, essayez de mettre en place des effets d'animation sympatiques !
 pour le moment, les contrôles sont très basiques : il n'est pas possible d'aller à une image précise en cliquant une seule fois. Que diriez-vous de réaliser une liste de boutons représentant chacun une diapositive ?
 * de même, il est possible de faire des miniatures des images et de les afficher en dessous du carrousel pour faire une bien meilleure navigation !
