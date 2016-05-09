@@ -24,7 +24,7 @@ function maBoucle () {
 maBoucle(); // on oublie pas de lancer la fonction une première fois
 ```
 
-Les images utilisées ici proviennent de <lorempixel.com> et ne sont pas toutes libres de droit.
+Les images utilisées ici proviennent de [lorempixel.com](http://lorempixel.com/) et ne sont pas toutes libres de droit.
 
 Vous avez maintenant toutes les clés pour réaliser ce carrousel !
 
