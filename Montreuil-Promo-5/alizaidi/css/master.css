@@ -1,0 +1,35 @@
+body {
+    background-color: white;
+    background-image: url(http://www.harshalpatel.info/mobile-stuffs/animated/New%20Amazing%20New%20Animated%20Wallpaper%20for%20mobile%20Part1%20December%202010.gif);
+}
+.container {
+    max-width: 680px;
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.container div {
+    background-color: black;
+    width: 680px;
+    display: inline-block;
+    display: none;
+}
+.container img {
+    width: 700px;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 0 0 6px black;
+}
+button {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FAA533;
+    border-color: black;
+}
+.next {
+    right: 50px;
+}
+.prev {
+    left: 80px;
+}
