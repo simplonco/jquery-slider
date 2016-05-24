@@ -1,0 +1,66 @@
+\`` <html><head>
+   <meta charset="utf8" />
+   <title>watchtimer</title>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <style>
+       body {
+           background-color: rgb(176, 245, 255);
+       }
+
+       #output {
+           width: 100px;
+           height: 25px;
+           background-color: #ccc;
+           border: 2px solid;
+       }
+
+       .controls {
+           width: 400px;
+           margin: 0 auto;
+           text-align: center;
+       }
+   </style></head><body>    <div class="controls">
+       <h1>My pomodoro app</h1>
+       <p id="output">25:00:0</p>
+       <input id="input"></input>
+       <button id="startPause" onclick="startPause()">start</button>
+       <button onclick="reset()">reset</button>
+   </div>     <script>
+       var running = 0;        function startPause() {
+           if (running === 0) {
+               running = 1;
+               if (document.getElementById("input").value == "") {
+                   var time = 25 * 60 * 10; // 25 min;
+                   increment(time);
+               } else {
+                   var newMin = document.getElementById("input").value;
+                   var time = newMin * 60 * 10;                    increment(time);
+               }
+               document.getElementById("startPause").innerHTML = "pause";
+           } else {
+               running = 0;
+               document.getElementById("startPause").innerHTML = "resume";
+           }
+       }        function reset() {
+           running = 0;
+           time = 25 * 60 * 10; // 25 min
+          // document.getElementById("startPause").innerHTML = "start";
+           document.getElementById("output").innerHTML = "25:00:0";
+       }        function increment(time) {
+           if (running === 1) {
+               setTimeout(function() {
+                   time--;
+                   console.log("DEBUG: time = " + time);
+                   var mins = Math.floor(time / (10 * 60));
+                   var secs = Math.floor(time / 10) % 60;
+                   var tenths = time % 10;                    if (mins < 10) {
+                       mins = "0" + mins
+                   }                    if (secs < 10) {
+                       secs = "0" + secs
+                   }                    document.getElementById("output").innerHTML = mins + ":" + secs + ":" + tenths;
+                   increment(time);
+               }, 50);            }
+       }
+
+   </script>
+</body></html>  ``\

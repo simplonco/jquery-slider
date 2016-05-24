@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=" utf-8 />
+  <title>jquery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      $("#down").click(function() {
+        $("#slide").slideDown(5000);
+      });
+
+      $("#up").click(function() {
+        $("#slide").slideUp(5000);
+      })
+
+    })
+  </script>
+  <style type="text/css">
+    #slide {
+      width: 450px;
+      border: 2px solid #909;
+      background: #90F;
+      color: #fff;
+      display: none;
+      position: absolute;
+    }
+  </style>
+
+</head>
+
+<body>
+  <button id="down">down liste</button>
+  <button id="up">up liste</button>
+  <div id="slide">
+    <h3> cette page pour devlepeur wib</h3>
+    <ul>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>

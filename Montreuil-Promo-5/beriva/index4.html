@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=" utf-8 />
+  <title>jquery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      $("button").click(function() {
+        $("#hidden").fadeIn(slwo);
+      })
+
+    })
+  </script>
+  <style type="text/css">
+    #hidden {
+      width: 500px;
+      background: #063;
+      color: #fff;
+      border: 2px solid #003;
+      margin: 0 auto;
+      display: none;
+    }
+
+    button {
+      width: 80px;
+      margin: 30%auto;
+      margin-top: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="hidden">
+    <h1> cette page pour devlepeur wib</h1>
+  <ul>
+    <li>link</li>
+    <li>link</li>
+    <li>link</li>
+  </ul>
+  </div>
+  <button>hide</button>
+
+</body>
+
+</html>
