@@ -1,11 +1,23 @@
-#carrousel {
-    position: relative;
-    height: 200px;
+#slider {
+    
+    height: 400px;
     width: 700px;
-    margin: auto;
+    overflow: hidden;/* for display */
+    
 }
-#carrousel ul li {
-    position: absolute;
-    top: 0;
-    left: 0;
+#slider .slides{
+      display: block;
+    width:2100px;
+    height:400px;
+    margin:0 ;
+    padding: 0;
+}
+
+#slider .slide {
+  float:left;
+  list-style-type: none;
+   
+    height: 400px;
+    width: 700px;
+    
 }
